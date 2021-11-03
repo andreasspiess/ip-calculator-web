@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ipCalculator</title>
+</head>
+<body>
+<h1> Willkommen zum IP-Calculator</h1>
+<h2>Deine IP-Adresse:</h2>
+<p th:text = "${ipEingabe}"></p>
+<p th:text = "${binaeripEingabe}"></p>
+<h2>Deine SNM-Adresse:</h2>
+<p th:text = "${snmEingabe}"></p>
+<p th:text = "${binaersnmEingabe}"></p>
+<h2>Deine Netz-ID:</h2>
+<p th:text = "${netID}"></p>
+<p th:text = "${binaernetID}"></p>
+<h2>Dein Broadcast:</h2>
+<p th:text = "${broadcast}"></p>
+<p th:text = "${binaerbroadcast}"></p>
+<h2>Anzahl möglicher Geräte im Netzwerk:</h2>
+<p th:text = "${geraeteAnzahl}"></p>
+</body>
+</html>

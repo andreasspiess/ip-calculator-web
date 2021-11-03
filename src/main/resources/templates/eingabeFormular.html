@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular</title>
+    <style>
+        div {
+        margin-top: 10px;
+        }
+
+        div.button-div {
+        margin-top: 30px;
+        }
+
+        label {
+        display: inline-block;
+        width: 120px;
+        }
+    </style>
+</head>
+<body>
+<h1>Willkommen zum IP-Rechner</h1>
+<p> Bitte eine gültige IP und Subnetzmaske eingeben!!</p>
+
+<form method="get" action="/network">
+    <div>
+        <label for="ip">IP</label>
+        <input type="text" name="ip" id="ip" placeholder="z.B 192.168.2.32"/>
+    </div>
+    <div>
+        <label for="snm">Subnetzmaske</label>
+        <input type="text" name="snm" id="snm" placeholder="z.B 255.0.0.0"/>
+    </div>
+    <div class ="button-div">
+        <button type="submit">Abschicken</button>
+        <button type="reset" >Zurücksetzen</button>
+    </div>
+</form>
+</body>
+</html>
+
